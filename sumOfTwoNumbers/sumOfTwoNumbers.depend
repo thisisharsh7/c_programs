@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1643036345 source:c:\users\harsh kumar\new folder\sumoftwonumbers\main.c
+	<stdio.h>
+	<stdlib.h>
+
