@@ -7,27 +7,22 @@ int main(){
     char str1[100],str2[100];
     printf("Enter parent string.\n");
     gets(str1);
-    int n=strlen(str1);
     printf("\nEnter string whose occurance is to be find in parent string: ");
     gets(str2);
-    int i=0;
-    int cnt=0;
-    while(n>0){
-        int k=0;
-        char str[100];
-        while(str1[i]!=' '){
-            str[k++]=str1[i++];
-            printf("run1\n");
+    int n = strlen(str1),m = strlen(str2),cnt = 1,j;
+    for(int i=0;i<n;i++){
+        char rev[m];
+        int j=0;
+        while(str1[i]!=' ' && i<n ){
+            rev[j]+= str1[i];
+            j++;
+            i++;
         }
-        if(strcmp(str,str2)){
-            cnt++;
-        }
-        printf("run2\n");
-        str[0]='\0';
-        k=0;
-        n--;
+        printf("%s ", rev);
     }
+    
+    
 
-    printf("\n%d",cnt);
+    // printf("\n%d",cnt);
     return 0;
 }
