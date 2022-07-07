@@ -5,22 +5,38 @@
 
 int main(){
     char str[1000];
-    char vstr[100];
+    printf("Enter a string: ");
     gets(str);
     printf("\n");
     // printf("%s",str);
     int n= strlen(str);
     // printf("%d",n);
-    int cnt=0;
+    int acnt=0,ecnt=0,icnt=0,ocnt=0,ucnt=0;
     for(int i=0;i<n;i++){
         char ch=tolower(str[i]);
-        if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u'){
-            vstr[cnt]=ch;
-            cnt++;
+        switch (ch)
+        {
+        case 'a':
+            acnt++;
+            break;
+        case 'e':
+            ecnt++;
+            break;
+        case 'i':
+            icnt++;
+            break;
+        case 'o':
+            ocnt++;
+            break;
+        case 'u':
+            ucnt++;
+            break;
+        
+        default:
+            break;
         }
     }
-    
-    printf("%d",cnt);
+    printf("The count of a , e , i , o and u is %d , %d , %d , %d and %d respectively.\n",acnt,ecnt,icnt,ocnt,ucnt);
 
 
     return 0;
