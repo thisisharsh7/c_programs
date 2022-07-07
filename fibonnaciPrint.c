@@ -2,7 +2,7 @@
 
 #include<stdio.h>
 
-void fibb(int n){
+int fibb(int n){
     int a=0,b=1;
     int c;
     for(int i=0;i<n;i++){
@@ -11,6 +11,7 @@ void fibb(int n){
         a=b;
         b=c;
     }
+    
 }
 
 int main(){
