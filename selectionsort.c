@@ -3,15 +3,17 @@
 
 void selSort(int arr[],int n){
     for(int i=0;i<n-1;i++){
-        int minIdx = i;
+        int min=i;
         for(int j=i+1;j<n;j++){
-            if(arr[minIdx]>arr[j]){
-                minIdx = j;
+            if(arr[j]<arr[min]){
+                min=j;
             }
         }
-        int temp = arr[i];
-        arr[i] = arr[minIdx];
-        arr[minIdx] = temp;
+        if(min!=i){
+            int temp=arr[i];
+            arr[i]=arr[min];
+            arr[min]=temp;
+        }
     }
 }
 

@@ -13,6 +13,20 @@ void inSort(int arr[],int n){
     }
 }
 
+// void insertionSort(int arr[],int n){
+//     for(int i=1;i<n;i++){
+//         int temp=arr[i];
+//         int j=i-1;
+//         while(j>=0 && temp<arr[j]){
+//             arrr[j+1]=arr[j];
+//             j--;
+//         }
+//         arr[j+1]=temp;
+//     }
+// }
+
+
+
 int main(){
     int n;
     printf("Enter the size of an array: ");
