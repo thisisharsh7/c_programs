@@ -5,7 +5,7 @@
 int main(){
     for(int i=0;i<256;i++){
         // char ch = i;
-        printf("%c\n",i);
+        printf("%c ",i);
     }
 
     return 0;
